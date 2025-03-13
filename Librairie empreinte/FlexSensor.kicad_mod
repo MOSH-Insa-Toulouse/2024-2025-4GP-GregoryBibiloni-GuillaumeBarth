@@ -1,0 +1,193 @@
+(footprint "FlexSensor"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 2.5 0)
+		(layer "F.SilkS")
+		(uuid "9b9a831e-7826-40d1-9292-37fa169735d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "FlexSensor"
+		(at 0 -2.5 0)
+		(layer "F.Fab")
+		(uuid "79e01273-178f-40f8-ba40-8b1216755b87")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6adf8690-152b-46f3-8453-4d2355dc7d53")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c21daf9-6e74-4141-9767-0fa59cc184cd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d298f484-c3a9-4d3f-8ab6-eefada7d2f1c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.77 -1.5)
+		(end 2.77 -1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7d590664-2820-49d3-a7b1-503e994a3bff")
+	)
+	(fp_line
+		(start -2.77 1.5)
+		(end -2.77 -1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "35cbbeb3-6577-40c2-8def-7dad82d81f23")
+	)
+	(fp_line
+		(start 0 -1.5)
+		(end 0 1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0aa8d55f-43b7-4878-9701-3d10c400e931")
+	)
+	(fp_line
+		(start 2.77 -1.5)
+		(end 2.77 1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6273591d-db8d-4335-bb93-d8bfa2a2f380")
+	)
+	(fp_line
+		(start 2.77 1.5)
+		(end -2.77 1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fbe4952f-0578-498c-8e35-3692720b9e83")
+	)
+	(fp_line
+		(start -2.52 -1.25)
+		(end 2.52 -1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "16218ae8-1041-40a0-8b4c-cea4b3b2e24a")
+	)
+	(fp_line
+		(start -2.52 1.25)
+		(end -2.52 -1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a68a8afa-3b34-467a-ba1b-578aa737c660")
+	)
+	(fp_line
+		(start 2.52 -1.25)
+		(end 2.52 1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2bba01c8-1287-4c27-843d-415dc6bbf3ef")
+	)
+	(fp_line
+		(start 2.52 1.25)
+		(end -2.52 1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "27034227-ec95-4c69-9a0e-dcdb93b4b111")
+	)
+	(pad "1" thru_hole rect
+		(at -1.27 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "44806c0a-926a-4b85-afcd-1229a9ace684")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f968c968-7180-45d1-92ed-6bcce55da13e")
+	)
+	(model "U:/MOSH/3D model/SolidEdge/FS-L-0095-103-ST - Top.stp"
+		(offset
+			(xyz 0 0.5 10.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+	(model "U:/MOSH/1x2.STEP"
+		(offset
+			(xyz -2.5 -1.3 9)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -180 90)
+		)
+	)
+)

@@ -1,0 +1,190 @@
+(footprint "ServoMotor"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 2.5 0)
+		(layer "F.SilkS")
+		(uuid "b23c2a76-6819-40b8-a32b-638733bd7754")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ServoMotor"
+		(at 0 -2.5 0)
+		(layer "F.Fab")
+		(uuid "4429e5e6-3363-421d-ac09-cd31fa948787")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd0ee776-f816-45b2-a0fe-0f7891d17dec")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b976453-3cc9-42e7-9a7d-9747ad257db9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67620936-eec4-4705-a95e-878581161ee6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.04 -1.5)
+		(end 4.04 -1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a1f1bcb7-842f-40be-9f29-92ff3e92bc26")
+	)
+	(fp_line
+		(start -4.04 1.5)
+		(end -4.04 -1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0fcf027e-deb8-4baa-b0b8-df1444212045")
+	)
+	(fp_line
+		(start -1.27 -1.5)
+		(end -1.27 1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "782f6e3b-69f2-4664-bd34-36a22c02dda5")
+	)
+	(fp_line
+		(start 4.04 -1.5)
+		(end 4.04 1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "35d80f57-092a-4d1c-b3da-f946b05137d7")
+	)
+	(fp_line
+		(start 4.04 1.5)
+		(end -4.04 1.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e91c865c-df70-4ae3-a4f6-ce1e2b559e7a")
+	)
+	(fp_line
+		(start -3.79 -1.25)
+		(end 3.79 -1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "b5590a42-b7ee-4ff5-8648-bcb7e1bcf897")
+	)
+	(fp_line
+		(start -3.79 1.25)
+		(end -3.79 -1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a312b0c4-83c2-46b7-a185-6a73329cfae2")
+	)
+	(fp_line
+		(start 3.79 -1.25)
+		(end 3.79 1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a5968810-f43d-43a4-8811-0b2b7b6a9777")
+	)
+	(fp_line
+		(start 3.79 1.25)
+		(end -3.79 1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "0b9d4408-8186-49cc-98ac-d3373bd5a44c")
+	)
+	(pad "1" thru_hole circle
+		(at -2.54 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "14aa600c-70dc-44a2-b0d4-e3001d374b97")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dfe7eb6d-ca6c-4af6-a797-ece8951b7d12")
+	)
+	(pad "3" thru_hole rect
+		(at 2.54 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f3c55027-a14f-459f-8684-45316fdf3ef5")
+	)
+	(model "U:/MOSH/pin header female 2.54mm_0.1in.STEP"
+		(offset
+			(xyz -3.85 -1.1 10)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 180 90)
+		)
+	)
+)
