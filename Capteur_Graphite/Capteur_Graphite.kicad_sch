@@ -5982,7 +5982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:Rotatoire"
+		(property "Footprint" "Librairie empreinte:Rotatoire"
 			(at 148.59 36.83 0)
 			(effects
 				(font
@@ -6194,7 +6194,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:OLED"
+		(property "Footprint" "Librairie empreinte:OLED"
 			(at 92.71 31.75 0)
 			(effects
 				(font
@@ -6336,7 +6336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:LTC1050"
+		(property "Footprint" "Librairie empreinte:LTC1050"
 			(at 101.6 99.06 0)
 			(effects
 				(font
@@ -6533,7 +6533,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:CapteurGraph"
+		(property "Footprint" "Librairie empreinte:CapteurGraph"
 			(at 39.37 102.87 0)
 			(effects
 				(font
@@ -7013,7 +7013,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:HC05"
+		(property "Footprint" "Librairie empreinte:Bluetooth"
 			(at 93.98 64.77 0)
 			(effects
 				(font
@@ -7095,7 +7095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:FlexSensor"
+		(property "Footprint" "Librairie empreinte:FlexSensor"
 			(at 134.62 68.58 0)
 			(effects
 				(font
@@ -7165,7 +7165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:ServoMotor"
+		(property "Footprint" "Librairie empreinte:ServoMotor"
 			(at 190.5 45.72 0)
 			(effects
 				(font
@@ -7495,7 +7495,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Ma_Lib_Empreinte_Projet_Capteur:LTC1050"
+		(property "Footprint" "Librairie empreinte:LTC1050"
 			(at 55.88 139.7 0)
 			(effects
 				(font

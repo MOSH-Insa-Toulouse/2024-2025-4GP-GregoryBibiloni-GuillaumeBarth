@@ -1,7 +1,7 @@
 (footprint "Rotatoire"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 2.5 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c2f63c6a-8ce0-4495-bf4d-acf0abe8a7bf")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -192,7 +180,8 @@
 		(remove_unused_layers no)
 		(uuid "d32fb339-857d-4421-8e00-94ec70e1d982")
 	)
-	(model "U:/MOSH/3D model/Rotary Encoder - KY-040.step"
+	(embedded_fonts no)
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/Rotary encodeur/Rotary Encoder - KY-040.step"
 		(offset
 			(xyz -2 4.5 23)
 		)
@@ -203,7 +192,7 @@
 			(xyz -90 0 0)
 		)
 	)
-	(model "U:/MOSH/3D model/1x5.STEP"
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/STEP/1x5.STEP"
 		(offset
 			(xyz 6.35 1.4 10)
 		)

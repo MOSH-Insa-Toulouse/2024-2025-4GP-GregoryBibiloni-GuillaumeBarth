@@ -1,7 +1,7 @@
 (footprint "OLED"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 2.5 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a04c0e7d-98ce-47b7-a014-9f27a25b3f52")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -119,7 +107,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "240a8bf6-ec90-44c0-ba8a-9426d71e45d8")
 	)
@@ -195,7 +183,8 @@
 		(remove_unused_layers no)
 		(uuid "fb6053e4-c391-473c-ac37-7cab056b88f0")
 	)
-	(model "U:/MOSH/1x4.STEP"
+	(embedded_fonts no)
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/STEP/1x4.STEP"
 		(offset
 			(xyz -5 -1 10)
 		)
@@ -206,7 +195,7 @@
 			(xyz -90 0 -90)
 		)
 	)
-	(model "U:/MOSH/Pantalla OLED 0.96'' 128x64.stp"
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/OLED/Pantalla OLED 0.96'' 128x64.stp"
 		(offset
 			(xyz 0 -12 14)
 		)

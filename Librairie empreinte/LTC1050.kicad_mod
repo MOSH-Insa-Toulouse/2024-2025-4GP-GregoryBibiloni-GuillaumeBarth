@@ -1,7 +1,7 @@
 (footprint "LTC1050"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -12.208 -14.108 0)
@@ -10,7 +10,7 @@
 		(effects
 			(font
 				(size 0.314961 0.314961)
-				(thickness 0.15)
+				(thickness 0.07874)
 			)
 		)
 	)
@@ -21,19 +21,7 @@
 		(effects
 			(font
 				(size 0.314961 0.314961)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "80bfeb4b-003e-4e40-af84-997e62e17c70")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(thickness 0.07874)
 			)
 		)
 	)
@@ -584,5 +572,17 @@
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
 		(uuid "a835e0f5-c61d-401e-bf7f-f6b181768a20")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/LTC1050/LTC1050CS8_PBF/SO-8_S_LIT.iges"
+		(offset
+			(xyz -3.6 4 0)
+		)
+		(scale
+			(xyz 1.4 1.9 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
 	)
 )

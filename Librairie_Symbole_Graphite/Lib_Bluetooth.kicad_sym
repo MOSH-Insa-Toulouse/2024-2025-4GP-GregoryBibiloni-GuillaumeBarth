@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "CapteurGraph"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -112,6 +112,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "FlexSensor"
 		(exclude_from_sim no)
@@ -211,6 +212,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HC-05"
 		(exclude_from_sim no)
@@ -382,6 +384,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "LTC1050"
 		(pin_names
@@ -630,35 +633,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 55.88 -7.62 180)
+			(pin no_connect line
+				(at 55.88 0 180)
 				(length 7.62)
-				(name "EXTCLOCKINPUT"
+				(name "NC"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "5"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 55.88 -5.08 180)
-				(length 7.62)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "6"
+				(number "8"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -684,17 +669,35 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 55.88 0 180)
+			(pin output line
+				(at 55.88 -5.08 180)
 				(length 7.62)
-				(name "NC"
+				(name "OUT"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "8"
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 55.88 -7.62 180)
+				(length 7.62)
+				(name "EXTCLOCKINPUT"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -703,6 +706,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "LTC1050ACN8_PBF"
 		(pin_names
@@ -869,8 +873,8 @@
 		)
 		(symbol "LTC1050ACN8_PBF_0_0"
 			(rectangle
-				(start 7.62 -12.7)
-				(end 48.26 5.08)
+				(start 7.62 5.08)
+				(end 48.26 -12.7)
 				(stroke
 					(width 0.1524)
 					(type default)
@@ -951,35 +955,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 55.88 -7.62 180)
+			(pin no_connect line
+				(at 55.88 0 180)
 				(length 7.62)
-				(name "EXTCLOCKINPUT"
+				(name "NC"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "5"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 55.88 -5.08 180)
-				(length 7.62)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "6"
+				(number "8"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1005,17 +991,35 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 55.88 0 180)
+			(pin output line
+				(at 55.88 -5.08 180)
 				(length 7.62)
-				(name "NC"
+				(name "OUT"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "8"
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 55.88 -7.62 180)
+				(length 7.62)
+				(name "EXTCLOCKINPUT"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1024,6 +1028,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "OLED"
 		(exclude_from_sim no)
@@ -1159,6 +1164,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Rotatoire"
 		(exclude_from_sim no)
@@ -1312,6 +1318,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "ServoMotor"
 		(exclude_from_sim no)
@@ -1429,5 +1436,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )

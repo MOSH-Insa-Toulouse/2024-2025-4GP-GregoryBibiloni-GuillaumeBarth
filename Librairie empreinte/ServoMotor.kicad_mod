@@ -1,7 +1,7 @@
 (footprint "ServoMotor"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 2.5 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "dd0ee776-f816-45b2-a0fe-0f7891d17dec")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -176,7 +164,8 @@
 		(remove_unused_layers no)
 		(uuid "f3c55027-a14f-459f-8684-45316fdf3ef5")
 	)
-	(model "U:/MOSH/pin header female 2.54mm_0.1in.STEP"
+	(embedded_fonts no)
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/STEP/pin header female 2.54mm_0.1in.STEP"
 		(offset
 			(xyz -3.85 -1.1 10)
 		)

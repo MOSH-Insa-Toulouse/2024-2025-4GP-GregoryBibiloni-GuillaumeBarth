@@ -485,7 +485,9 @@
     "pinned_footprint_libs": [
       "Librairie empreinte"
     ],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Lib_Bluetooth"
+    ]
   },
   "meta": {
     "filename": "Capteur_Graphite.kicad_pro",
@@ -524,7 +526,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

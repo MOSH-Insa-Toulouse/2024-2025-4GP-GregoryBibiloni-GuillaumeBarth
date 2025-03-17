@@ -1,7 +1,7 @@
-(footprint "HC05"
-	(version 20240108)
+(footprint "Bluetooth"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 2.5 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "0317a602-72a8-42d8-861e-b4201c66fd31")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -200,7 +188,8 @@
 		(remove_unused_layers no)
 		(uuid "4ad53950-a25f-4b47-9c19-b300031aeca7")
 	)
-	(model "U:/MOSH/3D model/hc-05-bluetooth-module-2.snapshot.1/HC_05 Blue Tooth Module.stp"
+	(embedded_fonts no)
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/Bluetooth/hc-05-bluetooth-module-2.snapshot.1/HC_05 Blue Tooth Module.stp"
 		(offset
 			(xyz 0 6 29)
 		)
@@ -211,7 +200,7 @@
 			(xyz -90 0 0)
 		)
 	)
-	(model "U:/MOSH/3D model/1x6.STEP"
+	(model "C:/Users/guill/Documents/Projet Kicad GP 4A/2024-2025-4GP-GregoryBibiloni-GuillaumeBarth/3D Models/STEP/1x6.STEP"
 		(offset
 			(xyz -7.65 -1 10)
 		)
