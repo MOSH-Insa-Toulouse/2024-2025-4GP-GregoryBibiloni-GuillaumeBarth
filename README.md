@@ -85,11 +85,18 @@ Ce montage est composé de 3 filtres afin de limiter le bruit :
 
 •	En vert, on filtre le bruit de l’acquisition de l’Arduino
 
+Voici une simulation sur LTSpice qui montre l'atténuation du bruit en fonction de la fréquence :
+![Schéma 2bis](ReadMe/Image/LTSpiceReducBruit.png)
+
+On réduit le 50 Hz de 72 dB environ.
+
 Pour calculer la valeur de la résistance du capteur graphite, la formule est la suivante :
 
 ![Schéma 3](ReadMe/Image/Formule%20résistance.png)
 
 Où R2 correspond à la valeur du potentiomètre numérique.
+
+
 
 ---
 
