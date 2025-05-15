@@ -26,7 +26,7 @@ Cet article explique comment faire un capteur résistif à partir de crayon et d
 
 Quand on écrit avec un crayon gris sur du papier, on dépose des couches de graphites qui sont des conducteurs et laisse passer le courant mais avec une résistance. En déformant ce papier, les chaines de graphique sont plus ou moins éloignés et le courant circule plus ou moins facilement ce qui implique une variation de résistance. Ce phénomène fait qu’on peut faire de ce capteur une jauge de contrainte.
 
-![alt text](<Compression%20déformation.png>)
+![Schéma 1](ReadMe/Image/Compression%20déformation.png)
 _Cette figure vient de l'article cité ci dessus, et montre les chaines de carbone si on effectue une compression ou une flexion du papier. Une compression fait qu'on a des chaines plus proche donc une plus grande valeur de résistance. Pour une flexion on a l'effet contraire_
 
 L’objectif de ce projet est donc de pouvoir réaliser une jauge de contrainte « low-tech » 
@@ -75,7 +75,7 @@ Pour concevoir notre dispositif, on a besoin de ces composants :
 
 La résistance interne du capteur graphite est de l’ordre du GΩ donc le courant généré après application de la tension de 5V (Valeur de l’arduino) est faible (de l’ordre du nA). On a besoin de l’amplifier grâce à un montage transimpédance composé d’un amplificateur opérationnel (AOP), le LTC1050, qui peut capter les signaux de faible intensité.
 
-![alt text](Schéma%20electrique%20LTSpice.png)
+![Schéma 2](ReadMe/Image/Schéma%20electrique%20LTSpice.png)
 
 Ce montage est composé de 3 filtres afin de limiter le bruit :
 
@@ -87,7 +87,7 @@ Ce montage est composé de 3 filtres afin de limiter le bruit :
 
 Pour calculer la valeur de la résistance du capteur graphite, la formule est la suivante :
 
-![alt text](Formule%20résistance.png)
+![Schéma 3](ReadMe/Image/Formule%20résistance.png)
 
 Où R2 correspond à la valeur du potentiomètre numérique.
 
@@ -99,14 +99,14 @@ On a conçu notre PCB via le logiciel KiCad, cela s’est fait en 2 étapes :
 
 La première étape consiste en la réalisation du schématique, donc de créer tous les composants qu’on utilise en leur attribuant des pins, un nom et un modèle 3D. Une fois tous nos composants créés, on rajoute le montage de notre amplificateur transimpédance et on affecte chaque pin de l’Arduino à nos composants et on effectue le câblage entre les différents composants.
 
-![alt text](Face%20schématique.png)
+![Schéma 4](ReadMe/Image/Face%20schématique.png)
 Ceci est le schéma électrique de l'ensemble de nos composants.
 
 Une fois cela fait, on doit maintenant positionner l'ensemble de nos composants sur le PCB et les relier par la suite. Il faut placer judicieusement les composants sur le PCB afin qu'ils ne se chevauchent pas les uns sur les autres, et qu'ils n'empêchent pas le câblage de l'ensemble des composants. Cette étape nécessite une certaine rigueur afin d'éviter le plus que possible de faire des VIA (trou effectué afin de faire des connexions par-dessus certains routages).
 
 Voici le résultat de notre routage sur notre PCB :
 
-![alt text](PCB%20sur%20kicad.png)
+![Schéma 5](ReadMe/Image/PCB%20sur%20kicad.png)
 U6 correspond à l’encodeur rotatoire (et le servor a été mit en plus si on avait besoin d’un servo motor pendant les manipulations).
 
 ---
@@ -119,8 +119,7 @@ Il faut par la suite percer des trous sur notre plaque avec un fôret (0.8mm pou
 
 Une fois cette étape effectuée, on place tous nos composants sur notre Shield en les soudants, puis on raccorde le Shield avec la carte Arduino Uno :
 
-![alt text](Shield%20et%20composant.png)
-
+![Schéma 6](ReadMe/Image/Shield%20et%20composant.png)
 ---
 
 # Code Arduino
@@ -136,12 +135,12 @@ Le code est présent dans notre Git.
 
 On a créé l’application grâce au logiciel MIT App Inventor. C’est un APK et il est composé d’une face avant et d’une face arrière : 
 
-![alt text](Face%20avant%20app.png)
+![Schéma 7](ReadMe/Image/Face%20avant%20app.png)
 
 Ceci est la face avant.
 
 
-![alt text](Face%20arrière%20app.png)
+![Schéma 8](ReadMe/Image/Face%20arrière%20app.png)
 
 Et ceci est la face arrière.
 
@@ -154,14 +153,20 @@ Grâce à cette application, on peut se connecter sur le module Bluetooth et ré
 On veut faire un banc de test qui permet de calculer la valeur de la résistance du capteur graphite pour différentes valeurs de déformation.
 On utilise donc un support qui possèdent différents emplacement qui ont chacun leur propre rayon de courbure.
 
-De haut en bas :
-•   Rayon de courbure de 0.045m pour une déformation de 2,11E-3 
-•   Rayon de courbure de 0.04m pour une déformation de 2,38E-3
-•   Rayon de courbure de 0.035m pour une déformation de 2,71E-3
-•   Rayon de courbure de 0.03m pour une déformation de 3,17E-3
-•   Rayon de courbure de 0.025m pour une déformation de 3,80E-3
-•   Rayon de courbure de 0.02m pour une déformation de 4,75E-3
+Le support ressemble à :
 
+![Schéma 9](ReadMe/Image/Banc.png)
+
+De haut en bas :
+
+•   Rayon de courbure de 0.045m pour une déformation de 2,11E-3. 
+•   Rayon de courbure de 0.04m pour une déformation de 2,38E-3.
+•   Rayon de courbure de 0.035m pour une déformation de 2,71E-3.
+•   Rayon de courbure de 0.03m pour une déformation de 3,17E-3.
+•   Rayon de courbure de 0.025m pour une déformation de 3,80E-3.
+•   Rayon de courbure de 0.02m pour une déformation de 4,75E-3.
+
+Un souci important à noter, c'est que le papier s'use très vite et les valeurs deviennent vite faussées.
 
 ---
 
