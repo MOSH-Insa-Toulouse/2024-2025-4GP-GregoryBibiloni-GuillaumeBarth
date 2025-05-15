@@ -163,10 +163,15 @@ Le support ressemble à :
 De haut en bas :
 
 •   Rayon de courbure de 0.045m pour une déformation de 2,11E-3. 
+
 •   Rayon de courbure de 0.04m pour une déformation de 2,38E-3.
+
 •   Rayon de courbure de 0.035m pour une déformation de 2,71E-3.
+
 •   Rayon de courbure de 0.03m pour une déformation de 3,17E-3.
+
 •   Rayon de courbure de 0.025m pour une déformation de 3,80E-3.
+
 •   Rayon de courbure de 0.02m pour une déformation de 4,75E-3.
 
 Un souci important à noter, c'est que le papier s'use très vite et les valeurs deviennent vite faussées.
