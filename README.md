@@ -133,7 +133,7 @@ Une fois cette étape effectuée, on place tous nos composants sur notre Shield 
 On code maintenant le programme qui permet de faire fonctionner notre système. Dans ce code on peut contrôler un menu qui s’affiche sur l’écran OLED à l’aide de l’encodeur rotatoire. On peut rentrer manuellement la valeur du potentiomètre numérique à l’aide de ce menu, on peut contrôler la connexion Bluetooth et on peut lire la valeur de la résistance liée à la déformation du capteur.
 
 Le code est présent dans notre Git.
-👉 [Voici le lien pour le code Arduino](Code-Arduino/)
+👉 [Voici le lien pour le code Arduino](Code%20Arduino/)
 
 ---
 
