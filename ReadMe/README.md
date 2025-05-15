@@ -115,6 +115,9 @@ U6 correspond à l’encodeur rotatoire (et le servor a été mit en plus si on 
 
 Une fois le PCB réalisé sur KiCaD, on l'a envoyé à Cathy afin qu'elle puisse vérifier que le PCB est correct et prêt à être imprimé. Pour cela, on lui a envoyé notre Gerber, le schéma contenant que le routage de notre carte. Le Gerber sert de masque afin de faire une impression UV sur une couche en cuivre sur la carte en époxy. Une fois cette impression faite, elle a plongé la plaque dans un révélateur qui a retiré les zones non exposées. Enfin un lavage à l'acétone permet d'enlever les dernières impuretés.
 
+Le Gerber :
+![Schéma 5bis](ReadMe/Image/Gerber.jpg)
+
 Il faut par la suite percer des trous sur notre plaque avec un fôret (0.8mm pour les composants et 1mm pour les pins de l’Arduino).
 
 Une fois cette étape effectuée, on place tous nos composants sur notre Shield en les soudants, puis on raccorde le Shield avec la carte Arduino Uno :
@@ -155,7 +158,7 @@ On utilise donc un support qui possèdent différents emplacement qui ont chacun
 
 Le support ressemble à :
 
-![Schéma 9](ReadMe/Image/Banc.png)
+![Schéma 9](ReadMe/Image/Banc.jpg)
 
 De haut en bas :
 
