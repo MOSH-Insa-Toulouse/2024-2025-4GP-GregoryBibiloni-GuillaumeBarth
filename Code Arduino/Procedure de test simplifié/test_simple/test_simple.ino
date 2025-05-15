@@ -10,6 +10,8 @@
 const int CaptPin = A0;
 volatile int encoderPos = 0;
 volatile int Push = 0;
+volatile float valeur = 1.0;
+volatile int Valeurbyt;
 const byte csPin           = 10;      // MCP42100 chip select pin
 const int  maxPositions    = 256;     // wiper can move from 0 to 255 = 256 positions
 const long rAB             = 52200;   // 100k pot resistance between terminals A and B, 
@@ -72,7 +74,11 @@ void Encoder() {
 void Bouton() {
   if (digitalRead(Switch)==LOW) {
     setPotWiper(pot0, encoderPos);
-    Serial.println(analogRead(CaptPin));
+    Valeurbyt = analogRead(CaptPin);
+    Serial.println(Valeurbyt);
+    valeur = Valeurbyt*(5.0/1023.0)*1000; 
+    Serial.print(valeur);                // show the voltage in mV and not byt
+    Serial.println("  mV");
     delay(500);
   }
 }
