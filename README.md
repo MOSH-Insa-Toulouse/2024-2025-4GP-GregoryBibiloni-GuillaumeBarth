@@ -115,6 +115,9 @@ U6 correspond à l’encodeur rotatoire (et le servor a été mit en plus si on 
 
 Une fois le PCB réalisé sur KiCaD, on l'a envoyé à Cathy afin qu'elle puisse vérifier que le PCB est correct et prêt à être imprimé. Pour cela, on lui a envoyé notre Gerber, le schéma contenant que le routage de notre carte. Le Gerber sert de masque afin de faire une impression UV sur une couche en cuivre sur la carte en époxy. Une fois cette impression faite, elle a plongé la plaque dans un révélateur qui a retiré les zones non exposées. Enfin un lavage à l'acétone permet d'enlever les dernières impuretés.
 
+Le Gerber :
+![Schéma 5bis](ReadMe/Image/Gerber.jpg)
+
 Il faut par la suite percer des trous sur notre plaque avec un fôret (0.8mm pour les composants et 1mm pour les pins de l’Arduino).
 
 Une fois cette étape effectuée, on place tous nos composants sur notre Shield en les soudants, puis on raccorde le Shield avec la carte Arduino Uno :
@@ -153,14 +156,20 @@ Grâce à cette application, on peut se connecter sur le module Bluetooth et ré
 On veut faire un banc de test qui permet de calculer la valeur de la résistance du capteur graphite pour différentes valeurs de déformation.
 On utilise donc un support qui possèdent différents emplacement qui ont chacun leur propre rayon de courbure.
 
-De haut en bas :
-•   Rayon de courbure de 0.045m pour une déformation de 2,11E-3 
-•   Rayon de courbure de 0.04m pour une déformation de 2,38E-3
-•   Rayon de courbure de 0.035m pour une déformation de 2,71E-3
-•   Rayon de courbure de 0.03m pour une déformation de 3,17E-3
-•   Rayon de courbure de 0.025m pour une déformation de 3,80E-3
-•   Rayon de courbure de 0.02m pour une déformation de 4,75E-3
+Le support ressemble à :
 
+![Schéma 9](ReadMe/Image/Banc.jpg)
+
+De haut en bas :
+
+•   Rayon de courbure de 0.045m pour une déformation de 2,11E-3. 
+•   Rayon de courbure de 0.04m pour une déformation de 2,38E-3.
+•   Rayon de courbure de 0.035m pour une déformation de 2,71E-3.
+•   Rayon de courbure de 0.03m pour une déformation de 3,17E-3.
+•   Rayon de courbure de 0.025m pour une déformation de 3,80E-3.
+•   Rayon de courbure de 0.02m pour une déformation de 4,75E-3.
+
+Un souci important à noter, c'est que le papier s'use très vite et les valeurs deviennent vite faussées.
 
 ---
 
