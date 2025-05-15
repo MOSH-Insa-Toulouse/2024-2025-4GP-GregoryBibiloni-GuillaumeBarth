@@ -109,6 +109,9 @@ Voici le résultat de notre routage sur notre PCB :
 ![Schéma 5](ReadMe/Image/PCB%20sur%20kicad.png)
 U6 correspond à l’encodeur rotatoire (et le servor a été mit en plus si on avait besoin d’un servo motor pendant les manipulations).
 
+[Voici le lien pour le KiCad](KiCad.md)
+
+
 ---
 
 # Réalisation du Shield
