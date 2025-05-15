@@ -152,6 +152,8 @@ Et ceci est la face arrière.
 
 Grâce à cette application, on peut se connecter sur le module Bluetooth et récupérer la valeur de la résistance en fonction de la flexion.
 
+👉 [Voici le lien pour l'application Android (sous forme .aia et .apk)](Application%20Android/)
+
 ---
 
 # Banc de test
