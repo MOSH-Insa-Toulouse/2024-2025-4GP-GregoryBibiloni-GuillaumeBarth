@@ -137,13 +137,16 @@ Le code est présent dans notre Git.
 On a créé l’application grâce au logiciel MIT App Inventor. C’est un APK et il est composé d’une face avant et d’une face arrière : 
 
 ![alt text](image-5.png)
+
 Ceci est la face avant.
 
 
 ![alt text](image-6.png)
+
 Et ceci est la face arrière.
 
 Grâce à cette application, on peut se connecter sur le module Bluetooth et récupérer la valeur de la résistance en fonction de la flexion.
+
 ---
 
 # Banc de test
