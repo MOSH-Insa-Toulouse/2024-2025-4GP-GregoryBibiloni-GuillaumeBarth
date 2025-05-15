@@ -140,7 +140,7 @@ On a créé l’application grâce au logiciel MIT App Inventor. C’est un APK 
 Ceci est la face avant.
 
 
-![Schéma 8](ReadMe/Image/Face%20%arrière%20app.png)
+![Schéma 8](ReadMe/Image/Face%20arrière%20app.png)
 
 Et ceci est la face arrière.
 
