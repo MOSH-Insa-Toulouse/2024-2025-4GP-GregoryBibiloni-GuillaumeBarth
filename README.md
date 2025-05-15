@@ -75,7 +75,7 @@ Pour concevoir notre dispositif, on a besoin de ces composants :
 
 La résistance interne du capteur graphite est de l’ordre du GΩ donc le courant généré après application de la tension de 5V (Valeur de l’arduino) est faible (de l’ordre du nA). On a besoin de l’amplifier grâce à un montage transimpédance composé d’un amplificateur opérationnel (AOP), le LTC1050, qui peut capter les signaux de faible intensité.
 
-![alt text](<Schéma electrique LTSpice.png>)
+![Schéma 2](ReadMe/Image/Schéma%20electrique%20LTSpice.png)
 
 Ce montage est composé de 3 filtres afin de limiter le bruit :
 
@@ -87,7 +87,7 @@ Ce montage est composé de 3 filtres afin de limiter le bruit :
 
 Pour calculer la valeur de la résistance du capteur graphite, la formule est la suivante :
 
-![alt text](<Formule résistance.png>)
+![Schéma 3](ReadMe/Image/Formule%20résistance.png)
 
 Où R2 correspond à la valeur du potentiomètre numérique.
 
@@ -99,14 +99,14 @@ On a conçu notre PCB via le logiciel KiCad, cela s’est fait en 2 étapes :
 
 La première étape consiste en la réalisation du schématique, donc de créer tous les composants qu’on utilise en leur attribuant des pins, un nom et un modèle 3D. Une fois tous nos composants créés, on rajoute le montage de notre amplificateur transimpédance et on affecte chaque pin de l’Arduino à nos composants et on effectue le câblage entre les différents composants.
 
-![alt text](Face%20schématique.png)
+![Schéma 4](ReadMe/Image/Face%20schématique.png)
 Ceci est le schéma électrique de l'ensemble de nos composants.
 
 Une fois cela fait, on doit maintenant positionner l'ensemble de nos composants sur le PCB et les relier par la suite. Il faut placer judicieusement les composants sur le PCB afin qu'ils ne se chevauchent pas les uns sur les autres, et qu'ils n'empêchent pas le câblage de l'ensemble des composants. Cette étape nécessite une certaine rigueur afin d'éviter le plus que possible de faire des VIA (trou effectué afin de faire des connexions par-dessus certains routages).
 
 Voici le résultat de notre routage sur notre PCB :
 
-![alt text](PCB%20sur%20kicad.png)
+![Schéma 5](ReadMe/Image/PCB%20sur%20kicad.png)
 U6 correspond à l’encodeur rotatoire (et le servor a été mit en plus si on avait besoin d’un servo motor pendant les manipulations).
 
 ---
@@ -119,8 +119,7 @@ Il faut par la suite percer des trous sur notre plaque avec un fôret (0.8mm pou
 
 Une fois cette étape effectuée, on place tous nos composants sur notre Shield en les soudants, puis on raccorde le Shield avec la carte Arduino Uno :
 
-![alt text](Shield%20et%20composant.png)
-
+![Schéma 6](ReadMe/Image/Shield%20et%20composant.png)
 ---
 
 # Code Arduino
@@ -136,12 +135,12 @@ Le code est présent dans notre Git.
 
 On a créé l’application grâce au logiciel MIT App Inventor. C’est un APK et il est composé d’une face avant et d’une face arrière : 
 
-![alt text](Face%20avant%20app.png)
+![Schéma 7](ReadMe/Image/Face%20avant%20app.png)
 
 Ceci est la face avant.
 
 
-![alt text](Face%20arrière%20app.png)
+![Schéma 8](ReadMe/Image/Face%20%arrière%20app.png)
 
 Et ceci est la face arrière.
 
