@@ -38,36 +38,51 @@ L’objectif de ce projet est donc de pouvoir réaliser une jauge de contrainte 
 Voici la liste des livrables :
 
 •	Le Shield PCB branché sur une carte Arduino UNO, intégrant le capteur graphite, un module Bluetooth, un encodeur rotatoire, un potentiomètre numérique, un écran OLED, et un capteur de flexion industriel.
-•	Le code Arduino qui permet de contrôler tous les composants et d’acquérir les mesures. (Mesure de résistance, Connection Bluetooth, Affichage de l’OLED, l’encodeur rotatoire et le potentiomètre numérique)
+
+•	Le code Arduino qui permet de contrôler tous les composants et d’acquérir les mesures. (Mesure de résistance, Connection Bluetooth, Affichage de l’OLED, l’encodeur rotatoire et le potentiomètre numérique).
+
 •	L’application Android qui permet d’afficher la valeur de la résistance directement sur son téléphone.
-•	La datasheet du capteur en graphite (avec différentes valeurs de crayon)
+
+•	La datasheet du capteur en graphite (avec différentes valeurs de crayon).
 
 ---
 
 # Matériel nécessaire
 
 Pour concevoir notre dispositif, on a besoin de ces composants :
-•	Des résistances : 1 résistance de 1 kΩ, 1 résistance de 10 kΩ, 2 résistances de 100 kΩ, une résistance R2 qui correspond au potentiomètre numérique (le MCP41050) et une résistance de 47 kΩ pour la jauge de contrainte industrielle
-•	Des capacités : 2 capacités de 100 nF et 1 de 1 µF
-•	D’un amplificateur opérationnel : le LTC1050
-•	Un module Bluetooth HC-05
-•	Un encodeur rotatoire ESP32
-•	Un écran OLED 128 * 64
-•	Un flex sensor
-•	Le capteur graphite (connecté avec des pinces croco) fait avec un papier et un crayon
-•	La carte Arduino UNO
+
+•	Des résistances : 1 résistance de 1 kΩ, 1 résistance de 10 kΩ, 2 résistances de 100 kΩ, une résistance R2 qui correspond au potentiomètre numérique (le MCP41050) et une résistance de 47 kΩ pour la jauge de contrainte industrielle.
+
+•	Des capacités : 2 capacités de 100 nF et 1 de 1 µF.
+
+•	D’un amplificateur opérationnel : le LTC1050.
+
+•	Un module Bluetooth HC-05.
+
+•	Un encodeur rotatoire ESP32.
+
+•	Un écran OLED 128 * 64.
+
+•	Un flex sensor.
+
+•	Le capteur graphite (connecté avec des pinces croco) fait avec un papier et un crayon.
+
+•	La carte Arduino UNO.
 
 ---
 
 # Simulation LTSpice
 
-La résistance interne du capteur graphite est de l’ordre du GΩ donc le courant généré après application de la tension de 5V (Valeur de l’arduino) est faible (de l’ordre du nA). On a besoin de l’amplifier grâce à un montage transimpédance composé d’un amplificateur opérationel (AOP), le LTC1050, qui peut capter les signaux de faible intensité.
+La résistance interne du capteur graphite est de l’ordre du GΩ donc le courant généré après application de la tension de 5V (Valeur de l’arduino) est faible (de l’ordre du nA). On a besoin de l’amplifier grâce à un montage transimpédance composé d’un amplificateur opérationnel (AOP), le LTC1050, qui peut capter les signaux de faible intensité.
 
 ![alt text](image.png)
 
 Ce montage est composé de 3 filtres afin de limiter le bruit :
+
 •   En rouge, on filtre le 50 Hz du réseau d’électricité
+
 •	En bleu, on filtre le bruit du capteur
+
 •	En vert, on filtre le bruit de l’acquisition de l’Arduino
 
 Pour calculer la valeur de la résistance du capteur graphite, la formule est la suivante :
