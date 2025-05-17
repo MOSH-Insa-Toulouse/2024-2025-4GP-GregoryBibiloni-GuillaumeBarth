@@ -162,7 +162,7 @@ Grâce à cette application, on peut se connecter sur le module Bluetooth et ré
 
 ---
 
-# Banc de test
+# Banc de test et analyse
 
 On veut faire un banc de test qui permet de calculer la valeur de la résistance du capteur graphite pour différentes valeurs de déformation.
 On utilise donc un support qui possèdent différents emplacement qui ont chacun leur propre rayon de courbure.
