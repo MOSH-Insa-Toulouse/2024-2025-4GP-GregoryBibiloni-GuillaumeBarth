@@ -187,12 +187,12 @@ De haut en bas :
 
 Voici les résultats obtenus avec une résistance du potentiomètre de 40906 ohms :  
 
-![Schéma 10](ReadMe/Image/Flexion.jpg)
+![Schéma 10](ReadMe/Image/Flexion.png)
 
 Valeur obtenue pour trois types de crayons en effectuant une flexion : HB, 3B et 6B.
 On remarque donc une augmentation de la résistance relative plus on déforme le papier, ce qui était le résultat attendu.
 
-![Schéma 10](ReadMe/Image/Compression.jpg)
+![Schéma 10](ReadMe/Image/Compression.png)
 
 Valeur obtenue pour trois types de crayons en effectuant une compression : HB, 3B et 6B.
 On remarque donc une diminution de la résistance relative plus on déforme le papier, ce qui était le résultat attendu.
@@ -203,7 +203,7 @@ On a remarqué un défaut pendant nos manipulations, et c'est que le papier s'us
 
 # Datasheet du capteur graphite
 
-👉 [Voici le lien pour la data sheet](DataSheet/)
+👉 [Voici le lien pour la data sheet](DataSheet/DataSheet.pdf)
 
 ---
 
