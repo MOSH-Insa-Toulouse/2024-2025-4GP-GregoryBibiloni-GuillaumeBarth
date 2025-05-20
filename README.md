@@ -189,12 +189,12 @@ Voici les résultats obtenus avec une résistance du potentiomètre de 40906 ohm
 
 ![Schéma 10](ReadMe/Image/Flexion.png)
 
-Valeur obtenue pour trois types de crayons en effectuant une flexion : HB, HB-2, 2B, 3B, 6B et B.
+Valeur obtenue pour six types de crayons en effectuant une flexion : HB, HB-2, 2B, 3B, 6B et B.
 On remarque donc une augmentation de la résistance relative plus on déforme le papier, ce qui était le résultat attendu. Mais le résultat n'est pas linéraire.
 
 ![Schéma 10](ReadMe/Image/Compression.png)
 
-Valeur obtenue pour trois types de crayons en effectuant une compression : HB, HB-2, 2B, 3B et 6B.
+Valeur obtenue pour cinq types de crayons en effectuant une compression : HB, HB-2, 2B, 3B et 6B.
 On remarque donc une diminution de la résistance relative plus on déforme le papier, ce qui était le résultat attendu. Encore une fois le résultat n'est pas linéaire et on n'arrive pas à obtenir des valeurs avec le crayon B.
 
 On a remarqué un défaut pendant nos manipulations, et c'est que le papier s'use très vite et on a souvent besoin de le changer fréquemment afin qu'il soit de nouveau opérationnel. 
