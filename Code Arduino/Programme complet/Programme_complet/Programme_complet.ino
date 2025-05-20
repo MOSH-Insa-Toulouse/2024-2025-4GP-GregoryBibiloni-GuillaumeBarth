@@ -5,6 +5,15 @@
 #define encoder0PinB  4  //DT de l'encodeur
 #define Switch 5 // bouton de l'encodeur
 
+//bluetooth
+#include <SoftwareSerial.h>             // Bibliothèque pour gérer la communication avec l'appareil bluetooth
+#define rxPin 6                         //Broche 11 en tant que RX, � raccorder sur TX du HC-05
+#define txPin 7                         //Broche 10 en tant que RX, � raccorder sur TX du HC-05
+#define baudrate 9600                   // baudRate à 9600, identique à celui du moniteur série pour synchroniser la communication
+SoftwareSerial mySerial(rxPin, txPin);  // Définition du software serial
+int ready = 0;
+
+
 const int CaptPin = A0; // Pin de lecture de la valeur du capteur
 
 // Parametrage capteur industriel
@@ -26,8 +35,6 @@ bool blue = true;
 
 int Position = 1;
 
-char bullshit[16];
-
 const byte csPin           = 10;      // Pin pour regler la valeur du potentiometre MCP42100 
 const int  maxPositions    = 256;     // défini les valeurs max pouvant etre inscrite sur le potentiometre
 const long rAB             = 52200;   // 100k pot resistance between terminals A and B, 
@@ -44,7 +51,7 @@ const byte pot0Shutdown    = 0x21;    // pot0 shutdown // B 0010 0001
 Adafruit_SSD1306 ecranOLED(nombreDePixelsEnLargeur, nombreDePixelsEnHauteur, &Wire, brocheResetOLED);
 
 void setPotWiper(int addr, int pos) {
-
+  char ResASCII[10];
   ecranOLED.clearDisplay();                                   // Effaçage de l'intégralité du buffer
   ecranOLED.setTextSize(1);                   // Taille des caractères (1:1, puis 2:1, puis 3:1)
   ecranOLED.setCursor(0, 0);
@@ -67,6 +74,11 @@ void setPotWiper(int addr, int pos) {
   ecranOLED.println(" mV");
   ecranOLED.setTextColor(SSD1306_BLACK, SSD1306_WHITE);
   ecranOLED.println("Retour");
+  dtostrf(resistanceWB, 5, 2, ResASCII);
+    if (blue){
+    
+    mySerial.write(ResASCII); // Envoyer sur le port bluetooth la valeur acquise
+  }
 
 }
 
@@ -89,6 +101,12 @@ void setup() {
   ecranOLED.begin(SSD1306_SWITCHCAPVCC, adresseI2CecranOLED);
 
   pinMode(flexPin, INPUT);
+
+  pinMode(rxPin,INPUT);
+  pinMode(txPin,OUTPUT);
+
+  Serial.begin(baudrate);
+  mySerial.begin(baudrate); // Initialiser le port bluetooth
 } 
 
 void loop(){
@@ -135,6 +153,9 @@ void Bouton() {
     valider=!valider;
     delay(500);
     Serial.println(valider);
+  }
+  if (valider & Position == 3){
+    blue = !blue;
   }
 }
 
@@ -276,5 +297,9 @@ if (valider){
   else{
     Menu_OLED();
   }
+}
+
+void code_blue(){
+
 }
 

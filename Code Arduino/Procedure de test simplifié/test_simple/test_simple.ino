@@ -10,6 +10,10 @@
 const int CaptPin = A0;
 volatile int encoderPos = 0;
 volatile int Push = 0;
+
+float moy=0.0;
+float ite=0.0;
+
 const byte csPin           = 10;      // MCP42100 chip select pin
 const int  maxPositions    = 256;     // wiper can move from 0 to 255 = 256 positions
 const long rAB             = 52200;   // 100k pot resistance between terminals A and B, 
@@ -73,6 +77,11 @@ void Bouton() {
   if (digitalRead(Switch)==LOW) {
     setPotWiper(pot0, encoderPos);
     Serial.println(analogRead(CaptPin));
+    
+    ite++;
+    moy = ((analogRead(CaptPin)*(5.0/1023.0)*1000)+(moy*(ite-1)))/ite;
+    Serial.println(moy);
+    Serial.println(ite);
     delay(500);
   }
 }
